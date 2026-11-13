@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ecloth-Discover standout outfits and everyday style at Ecloths. Shop curated looks and manage delivery in one place.">
+  <meta name="theme-color" content="#c62828">
+  <title>ecloths Find your look</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="ecloths home">
+      <span class="brand-mark" aria-hidden="true">e</span>
+      <span>ecloths<span class="brand-period">.</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#trending">Trending</a>
+      <a href="account.html">My account</a>
+      <a href="account.html#cart">Cart <span class="nav-count" id="cart-count">0</span></a>
+      <a href="account.html#wishlist">Wishlist <span class="nav-count" id="wishlist-count">0</span></a>
+    </nav>
+
+    <a class="header-shop-link" href="account.html">My account</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A fresh take on getting dressed</p>
+        <h1 id="hero-title">Good style.<br><span>Great feeling.</span></h1>
+        <p class="hero-description">Find the pieces that make an ordinary day feel like your kind of day.</p>
+        <a class="button button-dark" href="#shop">Explore the collection</a>
+        <p class="hero-note">Curated looks, made for you.</p>
+      </div>
+    </section>
+
+    <section class="trending-section" id="trending" aria-labelledby="trending-title">
+      <div class="trending-heading">
+        <div><p class="eyebrow">THE LOOKS EVERYONE LOVES</p><h2 id="trending-title">Trending now</h2></div>
+        <p>Gain courage for your dressing choices with thes Ecloths collection.</p>
+      </div>
+      <div class="trend-window">
+        <div class="trend-track">
+          <div class="trend-group">
+            <article class="trend-card"><img src="images/pic1.jpg.png" alt="Black patterned shirt and tailored trousers"><div><h3>Black Check Co-ord</h3><p>Easy statement dressing</p></div></article>
+            <article class="trend-card"><img src="images/pic2.jpg.png" alt="Long black coat styled with jeans"><div><h3>Modern Trench Look</h3><p>Your everyday uniform</p></div></article>
+            <article class="trend-card"><img src="images/pic4.jpg.png" alt="Red and navy striped rugby shirt"><div><h3>Striped Rugby Top</h3><p>Weekend, sorted</p></div></article>
+            <article class="trend-card"><img src="images/pic5.jpg.png" alt="Soft blue patterned knit sweater"><div><h3>Blue Knit Sweater</h3><p>Soft layers for cooler days</p></div></article>
+            <article class="trend-card"><img src="images/pic7.jpg.png" alt="Black jacket with denim panels"><div><h3>Denim Panel Set</h3><p>Denim with a twist</p></div></article>
+          </div>
+          <div class="trend-group" aria-hidden="true">
+            <article class="trend-card"><img src="images/pic1.jpg.png" alt=""><div><h3>Black Check Co-ord</h3><p>Easy statement dressing</p></div></article>
+            <article class="trend-card"><img src="images/pic2.jpg.png" alt=""><div><h3>Modern Trench Look</h3><p>Your everyday uniform</p></div></article>
+            <article class="trend-card"><img src="images/pic4.jpg.png" alt=""><div><h3>Striped Rugby Top</h3><p>Weekend, sorted</p></div></article>
+            <article class="trend-card"><img src="images/pic5.jpg.png" alt=""><div><h3>Blue Knit Sweater</h3><p>Soft layers for cooler days</p></div></article>
+            <article class="trend-card"><img src="images/pic7.jpg.png" alt=""><div><h3>Denim Panel Set</h3><p>Denim with a twist</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><h2>Ecloths Collection</h2></p>
+          <h3 id="shop-title">Looks worth a second look<span>.</span></h3>
+        </div>
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+          <input id="product-search" type="search" placeholder="Find your favourite" aria-label="Search outfits">
+        </label>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-name="black check co-ord shirt trousers">
+          <div class="product-image-wrap">
+            <img src="images/pic1.jpg.png" alt="Black patterned shirt styled with tailored trousers" loading="lazy">
+            <span class="product-tag">BESTSELLER</span>
+            <button class="wishlist-button" type="button" aria-label="Add Black Check Co-ord to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Black Check Co-ord</h3><p>Easy statement dressing</p></div><strong>$15</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="modern trench coat denim black">
+          <div class="product-image-wrap">
+            <img src="images/pic2.jpg.png" alt="Long black coat styled with jeans and a shoulder bag" loading="lazy">
+            <span class="product-tag">JUST IN</span>
+            <button class="wishlist-button" type="button" aria-label="Add Modern Trench Look to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Modern Trench Look</h3><p>Your everyday uniform</p></div><strong>$20</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="neutral tailored set blazer trousers">
+          <div class="product-image-wrap">
+            <img src="images/pic3.jpg.png" alt="Neutral blazer and matching wide-leg trousers" loading="lazy">
+            <span class="product-tag">EDITOR'S PICK</span>
+            <button class="wishlist-button" type="button" aria-label="Add Neutral Tailored Set to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Neutral Tailored Set</h3><p>Soft tones, strong look</p></div><strong>$16</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="striped rugby polo shirt red navy">
+          <div class="product-image-wrap">
+            <img src="images/pic4.jpg.png" alt="Red and navy striped rugby shirt" loading="lazy">
+            <span class="product-tag">A LITTLE SPORTY</span>
+            <button class="wishlist-button" type="button" aria-label="Add Striped Rugby Top to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Striped Rugby Top</h3><p>Weekend, sorted</p></div><strong>$15</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="blue knit sweater jumper">
+          <div class="product-image-wrap">
+            <img src="images/pic5.jpg.png" alt="Soft blue patterned knit sweater" loading="lazy">
+            <span class="product-tag">SOFT LAYERS</span>
+            <button class="wishlist-button" type="button" aria-label="Add Blue Knit Sweater to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Blue Knit Sweater</h3><p>A cozy-day favorite</p></div><strong>$17</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="evening blazer black suit formal">
+          <div class="product-image-wrap">
+            <img src="images/pic6.jpg.png" alt="Black formal blazer with embroidered details" loading="lazy">
+            <span class="product-tag">AFTER HOURS</span>
+            <button class="wishlist-button" type="button" aria-label="Add Evening Blazer to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Evening Blazer</h3><p>Make an entrance</p></div><strong>$25</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="denim panel set jacket jeans">
+          <div class="product-image-wrap">
+            <img src="images/pic7.jpg.png" alt="Black jacket with denim panels and matching jeans" loading="lazy">
+            <span class="product-tag">DENIM DAYS</span>
+            <button class="wishlist-button" type="button" aria-label="Add Denim Panel Set to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Denim Panel Set</h3><p>Denim with a twist</p></div><strong>$20</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="leather jacket look black">
+          <div class="product-image-wrap">
+            <img src="images/pic8.jpg.png" alt="Black leather jacket and dark denim outfit" loading="lazy">
+            <span class="product-tag">OFF-DUTY</span>
+            <button class="wishlist-button" type="button" aria-label="Add Leather Jacket Look to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Leather Jacket Look</h3><p>Cool without trying</p></div><strong>$23</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+
+        <article class="product-card" data-name="statement slides clogs shoes">
+          <div class="product-image-wrap">
+            <img src="images/clogs2.png" alt="Black statement slides with colorful graphic details" loading="lazy">
+            <span class="product-tag">FINISHING TOUCH</span>
+            <button class="wishlist-button" type="button" aria-label="Add Statement Slides to wishlist" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-info"><div><h3>Statement Slides</h3><p>Little detail, big energy</p></div><strong>$15</strong></div>
+          <button class="add-button" type="button">Add to cart <span aria-hidden="true">+</span></button>
+        </article>
+      </div>
+      <p class="empty-search" id="empty-search" hidden>The clothing is currently unavailable in the store.</p>
+    </section>
+
+    <section class="style-note">
+      <h2>Good things look good on you.</h2>
+      <a class="button button-light" href="#shop">Find your next favorite</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">e</span><span>ecloths<span class="brand-period">.</span></span></a>
+    <p>© 2026 Ecloths. All rights reserved.</p>
+    <p>Wear what feels like you.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="store.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

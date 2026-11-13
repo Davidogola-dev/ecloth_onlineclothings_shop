@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manage your Ecloths cart, wishlist, and delivery details.">
+  <meta name="theme-color" content="#c62828">
+  <title>My account — Ecloths</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="index.html" aria-label="Ecloths home">
+      <span class="brand-mark" aria-hidden="true">e</span>
+      <span>ecloths<span class="brand-period">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#trending">Trending</a>
+      <a href="#account" aria-current="page">My account</a>
+      <a href="#cart">Cart <span class="nav-count" id="cart-count">0</span></a>
+      <a href="#wishlist">Wishlist <span class="nav-count" id="wishlist-count">0</span></a>
+    </nav>
+    <a class="header-shop-link" href="index.html#shop">Continue shopping</a>
+  </header>
+
+  <main class="account-page" id="account">
+    <section class="account-section" aria-labelledby="account-title">
+      <div class="section-heading account-heading">
+        <div>
+          <p class="eyebrow">YOUR Ecloths ACCOUNT</p>
+          <h1 id="account-title">Your shopping space</h1>
+        </div>
+        <p class="account-intro">Manage your cart, saved looks, and delivery details in one place.</p>
+      </div>
+      <div class="account-layout">
+        <div class="account-main">
+          <section class="account-panel" id="cart" aria-labelledby="cart-title">
+            <div class="panel-heading">
+              <div><p class="eyebrow">READY WHEN YOU ARE</p><h2 id="cart-title">Your cart <span class="panel-count" id="cart-panel-count">0 items</span></h2></div>
+              <a href="index.html#shop">Continue shopping</a>
+            </div>
+            <div id="cart-items" class="cart-items" aria-live="polite"></div>
+            <p class="empty-message" id="cart-empty">Your cart is empty. Add a look you love to get started.</p>
+            <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div>
+          </section>
+
+          <section class="account-panel" id="wishlist" aria-labelledby="wishlist-title">
+            <div class="panel-heading">
+              <div><p class="eyebrow">SAVED FOR LATER</p><h2 id="wishlist-title">Your wishlist <span class="panel-count" id="wishlist-panel-count">0 items</span></h2></div>
+              <a href="index.html#shop">Find a favorite</a>
+            </div>
+            <div id="wishlist-items" class="wishlist-items" aria-live="polite"></div>
+            <p class="empty-message" id="wishlist-empty">Tap the heart on any look to save it here.</p>
+          </section>
+        </div>
+
+        <aside class="account-panel checkout-panel" aria-labelledby="checkout-title">
+          <p class="eyebrow">DELIVERY AND PAYMENT</p>
+          <h2 id="checkout-title">Checkout</h2>
+          <p class="checkout-intro">Add your contact and delivery details before placing your order.</p>
+          <form id="checkout-form">
+            <label for="customer-name">Full name <span class="required-label">Required</span></label>
+            <input id="customer-name" name="name" autocomplete="name" required>
+            <label for="customer-email">Email address <span class="required-label">Required</span></label>
+            <input id="customer-email" name="email" type="email" autocomplete="email" required>
+            <label for="customer-phone">M-Pesa phone number <span class="required-label">Required</span></label>
+            <input id="customer-phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. 07XX XXX XXX" required>
+            <label for="delivery-county">County <span class="required-label">Required</span></label>
+            <input id="delivery-county" name="county" autocomplete="address-level1" required>
+            <label for="delivery-location">Town and delivery pickup station <span class="required-label">Required</span></label>
+            <textarea id="delivery-location" name="address" autocomplete="street-address" rows="3" required></textarea>
+            <fieldset class="payment-methods">
+              <legend>Payment method <span class="required-label">Required</span></legend>
+              <label><input type="radio" name="paymentMethod" value="mpesa" checked required> Lipa na M-Pesa</label>
+              <label><input type="radio" name="paymentMethod" value="cod" required> Cash on delivery</label>
+            </fieldset>
+            <button class="button checkout-button" type="submit">Place order</button>
+            <p class="payment-note">This is a Demo no Intergration for livepay Involved.</p>
+            <p class="checkout-message" id="checkout-message" role="status" aria-live="polite"></p>
+          </form>
+        </aside>
+      </div>
+      <p class="review-access-note" id="review-access-status" role="status" aria-live="polite">Reviews unlock after an M-Pesa payment is verified or a cash-on-delivery order is marked delivered.</p>
+      <section class="account-panel review-access-panel" id="review-panel" aria-labelledby="review-title" hidden>
+        <p class="eyebrow">YOUR COMPLETED ORDERS</p>
+        <h2 id="review-title">Review a purchase</h2>
+        <form class="review-form" id="review-form">
+          <label for="review-order">Completed order</label>
+          <select id="review-order" name="orderId" required>
+            <option value="">Choose an order</option>
+          </select>
+          <label for="review-product">Purchased item</label>
+          <select id="review-product" name="productId" required disabled>
+            <option value="">Choose an item</option>
+          </select>
+          <fieldset class="star-rating">
+            <legend>Your rating <span class="required-label">Required</span></legend>
+            <div class="star-rating-options">
+              <input id="review-rating-5" name="rating" type="radio" value="5" required>
+              <label for="review-rating-5" aria-label="5 stars">★</label>
+              <input id="review-rating-4" name="rating" type="radio" value="4">
+              <label for="review-rating-4" aria-label="4 stars">★</label>
+              <input id="review-rating-3" name="rating" type="radio" value="3">
+              <label for="review-rating-3" aria-label="3 stars">★</label>
+              <input id="review-rating-2" name="rating" type="radio" value="2">
+              <label for="review-rating-2" aria-label="2 stars">★</label>
+              <input id="review-rating-1" name="rating" type="radio" value="1">
+              <label for="review-rating-1" aria-label="1 star">★</label>
+            </div>
+          </fieldset>
+          <label for="review-comment">Your review</label>
+          <textarea id="review-comment" name="comment" rows="4" maxlength="600" required></textarea>
+          <button class="button review-submit" type="submit">Submit review</button>
+          <p class="review-note">The review service must confirm delivery to both the customer and the store.</p>
+          <p class="checkout-message" id="review-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">e</span><span>ecloths<span class="brand-period">.</span></span></a>
+    <p>© 2026 Ecloths. All rights reserved.</p>
+    <p>Wear what feels like you.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="store.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
